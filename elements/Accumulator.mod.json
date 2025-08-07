@@ -114,16 +114,13 @@
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
-    "energyInitial": 400,
-    "energyCapacity": 1200,
+    "energyInitial": 0,
+    "energyCapacity": 1200000,
     "energyMaxReceive": 400000,
     "energyMaxExtract": 400000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "AccumulatorOnBlockRightClicked"
-    },
     "onTickUpdate": {
       "name": "AccumulatorOnTickUpdate"
     },

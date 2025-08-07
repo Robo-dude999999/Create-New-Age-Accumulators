@@ -48,40 +48,6 @@
       }
     },
     {
-      "name": "AccumulatorOnBlockRightClicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "accumulator_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/createnewageaccumulators/procedures/AccumulatorOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AABattery",
       "type": "item",
       "compiles": true,
@@ -245,11 +211,11 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imcomplete_aa_battery",
+      "registry_name": "imcomplete_battery",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createnewageaccumulators/item/ImcompleteAABatteryItem.java",
-          "src/main/resources/assets/create_new_age_accumulators/models/item/imcomplete_aa_battery.json"
+          "src/main/resources/assets/create_new_age_accumulators/models/item/imcomplete_battery.json"
         ]
       }
     },
@@ -306,7 +272,7 @@
       "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
       "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
       "block.create_new_age_accumulators.accumulator": "Accumulator",
-      "item.create_new_age_accumulators.imcomplete_aa_battery": "Imcomplete AA Battery",
+      "item.create_new_age_accumulators.imcomplete_battery": "Imcomplete Battery",
       "item.create_new_age_accumulators.battery_pack": "Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
       "item.create_new_age_accumulators.battery": "Battery"
@@ -319,7 +285,7 @@
   "workspaceSettings": {
     "modid": "create_new_age_accumulators",
     "modName": "Create: New Age: Accumulators",
-    "version": "1.3.0",
+    "version": "1.4.2",
     "author": "Robo-dude999999, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
