@@ -28,7 +28,7 @@ public class CreateNewAgeAccumulatorsModItems {
 	public static final RegistryObject<Item> LITHIUM_ORE = block(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ORE);
 	public static final RegistryObject<Item> LITHIUM_BLOCK = block(CreateNewAgeAccumulatorsModBlocks.LITHIUM_BLOCK);
 	public static final RegistryObject<Item> IONIC_LITHIUM = REGISTRY.register("ionic_lithium", () -> new IonicLithiumItem());
-	public static final RegistryObject<Item> IMCOMPLETE_BATTERY = REGISTRY.register("imcomplete_battery", () -> new ImcompleteAABatteryItem());
+	public static final RegistryObject<Item> INCOMPLETE_BATTERY = REGISTRY.register("incomplete_battery", () -> new ImcompleteAABatteryItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
