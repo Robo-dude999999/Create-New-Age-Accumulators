@@ -6,7 +6,7 @@
   "loops": 6,
   "results": [
     {
-      "item": "create_new_age_accumulators:aa_battery"
+      "item": "create_new_age_accumulators:battery"
     }
   ],
   "sequence": [

@@ -1,5 +1,6 @@
 {
   "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
+  "item_group.create_new_age_accumulators.accumulators": "Accumulators",
   "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
   "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
   "block.create_new_age_accumulators.accumulator": "Accumulator",
