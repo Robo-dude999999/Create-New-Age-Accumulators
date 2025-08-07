@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "loops": 6,
+  "results": [
+    {
+      "item": "create_new_age_accumulators:aa_battery"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        },
+        {
+          "item": "create_new_age_accumulators:ionic_lithium"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        },
+        {
+          "item": "create:iron_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:imcomplete_aa_battery"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_new_age_accumulators:imcomplete_aa_battery"
+  }
+}

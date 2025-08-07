@@ -1,0 +1,10 @@
+{
+  "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
+  "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
+  "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
+  "block.create_new_age_accumulators.accumulator": "Accumulator",
+  "item.create_new_age_accumulators.imcomplete_aa_battery": "Imcomplete AA Battery",
+  "item.create_new_age_accumulators.battery_pack": "Battery Pack",
+  "item.create_new_age_accumulators.lithium_ingot": "Lithium",
+  "item.create_new_age_accumulators.battery": "Battery"
+}

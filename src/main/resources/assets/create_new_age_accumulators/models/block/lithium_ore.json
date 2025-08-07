@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "create_new_age_accumulators:block/lithium_ore",
+    "particle": "create_new_age_accumulators:block/lithium_ore"
+  },
+  "render_type": "solid"
+}

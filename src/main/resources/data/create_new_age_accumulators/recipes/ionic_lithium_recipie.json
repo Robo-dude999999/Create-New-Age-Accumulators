@@ -1,0 +1,14 @@
+{
+  "type": "create_new_age:energising",
+  "energy_needed": 5000,
+  "ingredients": [
+    {
+      "item": "create_new_age_accumulators:lithium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_new_age_accumulators:ionic_lithium"
+    }
+  ]
+}

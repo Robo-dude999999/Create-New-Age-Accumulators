@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "batterypacktexture",
+        "1": "frametexture"
+      },
+      "name": "default"
+    }
+  }
+}

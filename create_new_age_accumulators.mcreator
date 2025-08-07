@@ -1,0 +1,315 @@
+{
+  "mod_elements": [
+    {
+      "name": "Accumulator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accumulator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/block/AccumulatorBlock.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/accumulator.json",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/entity/AccumulatorBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AccumulatorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accumulator_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/AccumulatorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AccumulatorOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accumulator_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/AccumulatorOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AABattery",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/battery.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/AABatteryItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BatteryPack",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_pack",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/battery_pack.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/BatteryPackItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BatteryPackRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_pack_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/battery_pack_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/lithium_ingot.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/LithiumIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LithiumOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/worldgen/configured_feature/lithium_ore.json",
+          "src/main/resources/data/create_new_age_accumulators/worldgen/placed_feature/lithium_ore.json",
+          "src/main/resources/data/create_new_age_accumulators/forge/biome_modifier/lithium_ore_biome_modifier.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/lithium_ore.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/LithiumOreBlock.java",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/lithium_ore.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/lithium_ore.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/lithium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/lithium_block.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/lithium_block.json",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/lithium_block.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/lithium_block.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/LithiumBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LithiumOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/lithium_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/lithium_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LithiumOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lithium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/lithium_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "IonicLithium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ionic_lithium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/ionic_lithium.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/IonicLithiumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IonicLithiumRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ionic_lithium_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/ionic_lithium_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "BatteryRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "battery_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/battery_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "ImcompleteAABattery",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imcomplete_aa_battery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/item/ImcompleteAABatteryItem.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/imcomplete_aa_battery.json"
+        ]
+      }
+    },
+    {
+      "name": "AccumulatorRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "accumulator_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/accumulator_recipie.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:LithiumBlock",
+      "~CUSTOM:LithiumOre"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:LithiumBlock",
+      "~CUSTOM:LithiumOre"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
+      "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
+      "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
+      "block.create_new_age_accumulators.accumulator": "Accumulator",
+      "item.create_new_age_accumulators.imcomplete_aa_battery": "Imcomplete AA Battery",
+      "item.create_new_age_accumulators.battery_pack": "Battery Pack",
+      "item.create_new_age_accumulators.lithium_ingot": "Lithium",
+      "item.create_new_age_accumulators.battery": "Battery"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "create_new_age_accumulators",
+    "modName": "Create: New Age: Accumulators",
+    "version": "1.0.0",
+    "author": "jdken, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createnewageaccumulators"
+  },
+  "mcreatorVersion": 202400232117
+}
