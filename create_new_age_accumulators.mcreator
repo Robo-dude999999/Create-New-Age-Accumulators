@@ -240,6 +240,53 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "CreativeAccumulator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_accumulator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/block/creative_accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/CreativeAccumulatorBlock.java",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/creative_accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/entity/CreativeAccumulatorBlockEntity.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/creative_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/creative_accumulator.json"
+        ]
+      }
+    },
+    {
+      "name": "CreativeAccumulatorOnTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_accumulator_on_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/CreativeAccumulatorOnTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -256,9 +303,10 @@
   },
   "tab_element_order": {
     "CUSTOM:Accumulators": [
-      "AABattery",
-      "BatteryPack",
+      "CreativeAccumulator",
       "Accumulator",
+      "BatteryPack",
+      "AABattery",
       "LithiumOre",
       "LithiumBlock",
       "LithiumIngot",
@@ -275,6 +323,7 @@
       "block.create_new_age_accumulators.accumulator": "Accumulator",
       "item.create_new_age_accumulators.battery_pack": "Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
+      "block.create_new_age_accumulators.creative_accumulator": "Creative Accumulator",
       "item.create_new_age_accumulators.battery": "Battery"
     }
   },
@@ -285,7 +334,7 @@
   "workspaceSettings": {
     "modid": "create_new_age_accumulators",
     "modName": "Create: New Age: Accumulators",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "author": "Robo-dude999999, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",

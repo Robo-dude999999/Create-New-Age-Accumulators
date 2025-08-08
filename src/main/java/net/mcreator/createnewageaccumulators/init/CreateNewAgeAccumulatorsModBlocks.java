@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.createnewageaccumulators.block.LithiumOreBlock;
 import net.mcreator.createnewageaccumulators.block.LithiumBlockBlock;
+import net.mcreator.createnewageaccumulators.block.CreativeAccumulatorBlock;
 import net.mcreator.createnewageaccumulators.block.AccumulatorBlock;
 import net.mcreator.createnewageaccumulators.CreateNewAgeAccumulatorsMod;
 
@@ -20,6 +21,7 @@ public class CreateNewAgeAccumulatorsModBlocks {
 	public static final RegistryObject<Block> ACCUMULATOR = REGISTRY.register("accumulator", () -> new AccumulatorBlock());
 	public static final RegistryObject<Block> LITHIUM_ORE = REGISTRY.register("lithium_ore", () -> new LithiumOreBlock());
 	public static final RegistryObject<Block> LITHIUM_BLOCK = REGISTRY.register("lithium_block", () -> new LithiumBlockBlock());
+	public static final RegistryObject<Block> CREATIVE_ACCUMULATOR = REGISTRY.register("creative_accumulator", () -> new CreativeAccumulatorBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
