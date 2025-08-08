@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BatteryPack"
+      "value": "CUSTOM:NickelCadmiumBatteryPack"
     },
     "name": "nickel_cadmium_battery_pack_recipe",
     "namespace": "mod"
