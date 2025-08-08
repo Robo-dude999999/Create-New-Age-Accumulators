@@ -29,12 +29,12 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class NickelCadmiumAccumulatorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public AccumulatorBlockEntity(BlockPos position, BlockState state) {
-		super(CreateNewAgeAccumulatorsModBlockEntities.LITHIUM_ION_ACCUMULATOR.get(), position, state);
+	public NickelCadmiumAccumulatorBlockEntity(BlockPos position, BlockState state) {
+		super(CreateNewAgeAccumulatorsModBlockEntities.NICKEL_CADMIUM_ACCUMULATOR.get(), position, state);
 	}
 
 	@Override
@@ -81,7 +81,7 @@ public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("lithium_ion_accumulator");
+		return Component.literal("nickel_cadmium_accumulator");
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Lithium Ion Accumulator");
+		return Component.literal("Nickel Cadmium Accumulator");
 	}
 
 	@Override
@@ -129,7 +129,7 @@ public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity imp
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(1200000, 400000, 400000, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(600000, 400000, 400000, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

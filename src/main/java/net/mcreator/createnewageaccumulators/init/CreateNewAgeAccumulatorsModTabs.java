@@ -21,10 +21,9 @@ import net.mcreator.createnewageaccumulators.CreateNewAgeAccumulatorsMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CreateNewAgeAccumulatorsModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateNewAgeAccumulatorsMod.MODID);
-	public static final RegistryObject<CreativeModeTab> ACCUMULATORS = REGISTRY.register("accumulators",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.create_new_age_accumulators.accumulators")).icon(() -> new ItemStack(CreateNewAgeAccumulatorsModBlocks.ACCUMULATOR.get())).displayItems((parameters, tabData) -> {
+	public static final RegistryObject<CreativeModeTab> ACCUMULATORS = REGISTRY.register("accumulators", () -> CreativeModeTab.builder().title(Component.translatable("item_group.create_new_age_accumulators.accumulators"))
+			.icon(() -> new ItemStack(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ION_ACCUMULATOR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.CREATIVE_ACCUMULATOR.get().asItem());
-				tabData.accept(CreateNewAgeAccumulatorsModBlocks.ACCUMULATOR.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.BATTERY_PACK.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.BATTERY.get());
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ORE.get().asItem());
@@ -33,9 +32,11 @@ public class CreateNewAgeAccumulatorsModTabs {
 				tabData.accept(CreateNewAgeAccumulatorsModItems.IONIC_LITHIUM.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.GRAPHITE.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.CADMIUM.get());
+				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ION_ACCUMULATOR.get().asItem());
+				tabData.accept(CreateNewAgeAccumulatorsModBlocks.NICKEL_CADMIUM_ACCUMULATOR.get().asItem());
 			})
 
-					.build());
+			.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

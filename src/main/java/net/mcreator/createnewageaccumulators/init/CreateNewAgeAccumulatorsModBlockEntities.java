@@ -11,14 +11,16 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.createnewageaccumulators.block.entity.NickelCadmiumAccumulatorBlockEntity;
 import net.mcreator.createnewageaccumulators.block.entity.CreativeAccumulatorBlockEntity;
 import net.mcreator.createnewageaccumulators.block.entity.AccumulatorBlockEntity;
 import net.mcreator.createnewageaccumulators.CreateNewAgeAccumulatorsMod;
 
 public class CreateNewAgeAccumulatorsModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CreateNewAgeAccumulatorsMod.MODID);
-	public static final RegistryObject<BlockEntityType<?>> ACCUMULATOR = register("accumulator", CreateNewAgeAccumulatorsModBlocks.ACCUMULATOR, AccumulatorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> LITHIUM_ION_ACCUMULATOR = register("lithium_ion_accumulator", CreateNewAgeAccumulatorsModBlocks.LITHIUM_ION_ACCUMULATOR, AccumulatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CREATIVE_ACCUMULATOR = register("creative_accumulator", CreateNewAgeAccumulatorsModBlocks.CREATIVE_ACCUMULATOR, CreativeAccumulatorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NICKEL_CADMIUM_ACCUMULATOR = register("nickel_cadmium_accumulator", CreateNewAgeAccumulatorsModBlocks.NICKEL_CADMIUM_ACCUMULATOR, NickelCadmiumAccumulatorBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "create_new_age_accumulators:blocks/accumulator",
+  "random_sequence": "create_new_age_accumulators:blocks/nickel_cadmium_accumulator",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "create_new_age_accumulators:accumulator"
+          "name": "create_new_age_accumulators:nickel_cadmium_accumulator"
         }
       ]
     }

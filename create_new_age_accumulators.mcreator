@@ -5,14 +5,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "accumulator",
+      "registry_name": "lithium_ion_accumulator",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createnewageaccumulators/block/AccumulatorBlock.java",
-          "src/main/resources/assets/create_new_age_accumulators/models/block/accumulator.json",
-          "src/main/resources/assets/create_new_age_accumulators/blockstates/accumulator.json",
-          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/accumulator.json",
-          "src/main/resources/assets/create_new_age_accumulators/models/item/accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/lithium_ion_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/lithium_ion_accumulator.json",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/lithium_ion_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/lithium_ion_accumulator.json",
           "src/main/java/net/mcreator/createnewageaccumulators/block/entity/AccumulatorBlockEntity.java"
         ]
       }
@@ -427,6 +427,53 @@
           "src/main/resources/data/create_new_age_accumulators/recipes/graphite_powder_recipie.json"
         ]
       }
+    },
+    {
+      "name": "NickelCadmiumAccumulator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_cadmium_accumulator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/block/NickelCadmiumAccumulatorBlock.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/nickel_cadmium_accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/entity/NickelCadmiumAccumulatorBlockEntity.java",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/nickel_cadmium_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nickel_cadmium_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/nickel_cadmium_accumulator.json"
+        ]
+      }
+    },
+    {
+      "name": "NCAccumulatorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nc_accumulator_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/NCAccumulatorOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -448,7 +495,6 @@
   "tab_element_order": {
     "CUSTOM:Accumulators": [
       "CreativeAccumulator",
-      "Accumulator",
       "BatteryPack",
       "AABattery",
       "LithiumOre",
@@ -456,7 +502,9 @@
       "LithiumIngot",
       "IonicLithium",
       "Graphite",
-      "Cadmium"
+      "Cadmium",
+      "Accumulator",
+      "NickelCadmiumAccumulator"
     ]
   },
   "language_map": {
@@ -464,7 +512,6 @@
       "item.create_new_age_accumulators.incomplete_battery": "Incomplete Battery",
       "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
       "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
-      "block.create_new_age_accumulators.accumulator": "Accumulator",
       "item.create_new_age_accumulators.graphite_powder": "Graphite Powder",
       "item.create_new_age_accumulators.battery_pack": "Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
@@ -474,7 +521,9 @@
       "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
       "block.create_new_age_accumulators.nickel_block": "Block of Nickel",
       "item.create_new_age_accumulators.nickel_dust": "Nickel",
+      "block.create_new_age_accumulators.lithium_ion_accumulator": "Lithium Ion Accumulator",
       "item.create_new_age_accumulators.graphite": "Graphite",
+      "block.create_new_age_accumulators.nickel_cadmium_accumulator": "Nickel Cadmium Accumulator",
       "item.create_new_age_accumulators.cadmium": "Cadmium"
     }
   },

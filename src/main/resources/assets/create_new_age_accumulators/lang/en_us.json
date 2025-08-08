@@ -2,7 +2,6 @@
   "item.create_new_age_accumulators.incomplete_battery": "Incomplete Battery",
   "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
   "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
-  "block.create_new_age_accumulators.accumulator": "Accumulator",
   "item.create_new_age_accumulators.graphite_powder": "Graphite Powder",
   "item.create_new_age_accumulators.battery_pack": "Battery Pack",
   "item.create_new_age_accumulators.lithium_ingot": "Lithium",
@@ -12,6 +11,8 @@
   "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
   "block.create_new_age_accumulators.nickel_block": "Block of Nickel",
   "item.create_new_age_accumulators.nickel_dust": "Nickel",
+  "block.create_new_age_accumulators.lithium_ion_accumulator": "Lithium Ion Accumulator",
   "item.create_new_age_accumulators.graphite": "Graphite",
+  "block.create_new_age_accumulators.nickel_cadmium_accumulator": "Nickel Cadmium Accumulator",
   "item.create_new_age_accumulators.cadmium": "Cadmium"
 }

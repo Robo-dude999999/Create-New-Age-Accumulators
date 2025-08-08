@@ -25,7 +25,7 @@ import net.mcreator.createnewageaccumulators.CreateNewAgeAccumulatorsMod;
 
 public class CreateNewAgeAccumulatorsModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, CreateNewAgeAccumulatorsMod.MODID);
-	public static final RegistryObject<Item> ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.ACCUMULATOR);
+	public static final RegistryObject<Item> LITHIUM_ION_ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ION_ACCUMULATOR);
 	public static final RegistryObject<Item> BATTERY = REGISTRY.register("battery", () -> new AABatteryItem());
 	public static final RegistryObject<Item> BATTERY_PACK = REGISTRY.register("battery_pack", () -> new BatteryPackItem());
 	public static final RegistryObject<Item> LITHIUM_INGOT = REGISTRY.register("lithium_ingot", () -> new LithiumIngotItem());
@@ -39,6 +39,7 @@ public class CreateNewAgeAccumulatorsModItems {
 	public static final RegistryObject<Item> NICKEL_DUST = REGISTRY.register("nickel_dust", () -> new NickelDustItem());
 	public static final RegistryObject<Item> NICKEL_BLOCK = block(CreateNewAgeAccumulatorsModBlocks.NICKEL_BLOCK);
 	public static final RegistryObject<Item> GRAPHITE_POWDER = REGISTRY.register("graphite_powder", () -> new GraphitePowderItem());
+	public static final RegistryObject<Item> NICKEL_CADMIUM_ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.NICKEL_CADMIUM_ACCUMULATOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

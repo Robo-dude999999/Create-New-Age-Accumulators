@@ -1,5 +1,5 @@
 {
-  "parent": "create_new_age_accumulators:block/accumulator",
+  "parent": "create_new_age_accumulators:block/nickel_cadmium_accumulator",
   "display": {
     "thirdperson": {
       "rotation": [

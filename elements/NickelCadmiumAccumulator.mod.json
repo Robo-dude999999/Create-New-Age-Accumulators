@@ -2,14 +2,14 @@
   "_fv": 66,
   "_type": "block",
   "definition": {
-    "texture": "batterypacktexture",
-    "textureTop": "screenshot_2025-04-05_075151",
-    "textureLeft": "screenshot_2025-04-05_075338",
-    "textureFront": "screenshot_2025-04-05_075338",
-    "textureRight": "screenshot_2025-04-05_075338",
-    "textureBack": "screenshot_2025-04-05_075338",
+    "texture": "yellowbatterypacktexture",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 2,
-    "customModelName": "accumulator:default",
+    "customModelName": "ncaccumulator:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Lithium Ion Accumulator",
+    "name": "Nickel Cadmium Accumulator",
     "specialInformation": {
       "fixedValue": []
     },
@@ -115,14 +115,14 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 1200000,
+    "energyCapacity": 600000,
     "energyMaxReceive": 400000,
     "energyMaxExtract": 400000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "AccumulatorOnTickUpdate"
+      "name": "NCAccumulatorOnTickUpdate"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

@@ -1,0 +1,10 @@
+{
+  "parent": "create_new_age_accumulators:custom/ncaccumulator",
+  "textures": {
+    "all": "create_new_age_accumulators:block/yellowbatterypacktexture",
+    "particle": "create_new_age_accumulators:block/yellowbatterypacktexture",
+    "0": "create_new_age_accumulators:block/yellowbatterypacktexture",
+    "1": "create_new_age_accumulators:block/frametexture"
+  },
+  "render_type": "solid"
+}
