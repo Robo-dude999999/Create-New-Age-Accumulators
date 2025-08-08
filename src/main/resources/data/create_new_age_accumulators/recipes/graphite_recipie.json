@@ -1,8 +1,12 @@
 {
-  "type": "create:pressing",
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
   "ingredients": [
     {
-      "tag": "minecraft:coals"
+      "item": "create_new_age_accumulators:graphite_powder"
+    },
+    {
+      "item": "minecraft:quartz"
     }
   ],
   "results": [

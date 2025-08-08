@@ -12,9 +12,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.createnewageaccumulators.item.NickelDustItem;
 import net.mcreator.createnewageaccumulators.item.LithiumIngotItem;
 import net.mcreator.createnewageaccumulators.item.IonicLithiumItem;
 import net.mcreator.createnewageaccumulators.item.ImcompleteAABatteryItem;
+import net.mcreator.createnewageaccumulators.item.GraphitePowderItem;
 import net.mcreator.createnewageaccumulators.item.GraphiteItem;
 import net.mcreator.createnewageaccumulators.item.CadmiumItem;
 import net.mcreator.createnewageaccumulators.item.BatteryPackItem;
@@ -34,6 +36,9 @@ public class CreateNewAgeAccumulatorsModItems {
 	public static final RegistryObject<Item> CREATIVE_ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.CREATIVE_ACCUMULATOR);
 	public static final RegistryObject<Item> GRAPHITE = REGISTRY.register("graphite", () -> new GraphiteItem());
 	public static final RegistryObject<Item> CADMIUM = REGISTRY.register("cadmium", () -> new CadmiumItem());
+	public static final RegistryObject<Item> NICKEL_DUST = REGISTRY.register("nickel_dust", () -> new NickelDustItem());
+	public static final RegistryObject<Item> NICKEL_BLOCK = block(CreateNewAgeAccumulatorsModBlocks.NICKEL_BLOCK);
+	public static final RegistryObject<Item> GRAPHITE_POWDER = REGISTRY.register("graphite_powder", () -> new GraphitePowderItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

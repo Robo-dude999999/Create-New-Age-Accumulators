@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      },
+      {
+        "value": "CUSTOM:NickelDust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NickelBlock"
+    },
+    "name": "nickel_ore_block_recipe",
+    "namespace": "mod"
+  }
+}

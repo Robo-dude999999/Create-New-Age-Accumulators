@@ -325,12 +325,118 @@
           "src/main/java/net/mcreator/createnewageaccumulators/item/CadmiumItem.java"
         ]
       }
+    },
+    {
+      "name": "CadmiumRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cadmium_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/cadmium_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/item/NickelDustItem.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nickel_dust.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/block/NickelBlockBlock.java",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/nickel_block.json",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/nickel_block.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nickel_block.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/nickel_block.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelOreBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelBlockOreRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelOreSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nickel_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_ore_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "GraphitePowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphite_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/graphite_powder.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/GraphitePowderItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GraphitePowderRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "graphite_powder_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/graphite_powder_recipie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:NickelBlock"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:NickelBlock",
       "~CUSTOM:LithiumBlock",
       "~CUSTOM:LithiumOre"
     ],
@@ -359,12 +465,15 @@
       "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
       "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
       "block.create_new_age_accumulators.accumulator": "Accumulator",
+      "item.create_new_age_accumulators.graphite_powder": "Graphite Powder",
       "item.create_new_age_accumulators.battery_pack": "Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
       "block.create_new_age_accumulators.creative_accumulator": "Creative Accumulator",
       "item.create_new_age_accumulators.battery": "Battery",
       "item_group.create_new_age_accumulators.accumulators": "Accumulators",
       "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
+      "block.create_new_age_accumulators.nickel_block": "Block of Nickel",
+      "item.create_new_age_accumulators.nickel_dust": "Nickel",
       "item.create_new_age_accumulators.graphite": "Graphite",
       "item.create_new_age_accumulators.cadmium": "Cadmium"
     }
