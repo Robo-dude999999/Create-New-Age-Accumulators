@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "loops": 6,
+  "results": [
+    {
+      "item": "create_new_age_accumulators:nickel_cadmium_battery"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        },
+        {
+          "item": "create_new_age_accumulators:nickel_dust"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        },
+        {
+          "item": "create_new_age_accumulators:cadmium"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age_accumulators:incomplete_battery"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_new_age_accumulators:incomplete_battery"
+  }
+}

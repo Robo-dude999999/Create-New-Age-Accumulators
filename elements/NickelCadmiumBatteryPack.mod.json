@@ -2,12 +2,12 @@
   "_fv": 66,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "aabattery",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "yellowbatterypacktexture",
+    "customModelName": "ncbatterypack:default",
     "customProperties": {},
     "states": [],
-    "name": "Lithium Ion Battery",
+    "name": "Nickel Cadmium Battery Pack",
     "rarity": "COMMON",
     "creativeTabs": [
       {

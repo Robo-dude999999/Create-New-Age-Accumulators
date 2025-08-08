@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "aabattery",
+    "texture": "ncbattery",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Lithium Ion Battery",
+    "name": "Nickel Cadmium Battery",
     "rarity": "COMMON",
     "creativeTabs": [
       {

@@ -474,6 +474,68 @@
           }
         ]
       }
+    },
+    {
+      "name": "NickelCadmiumAccumulatorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nickel_cadmium_accumulator_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_cadmium_accumulator_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelCadmiumBattery",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_cadmium_battery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nickel_cadmium_battery.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/NickelCadmiumBatteryItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NickelCadmiumBatteryRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nickel_cadmium_battery_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_cadmium_battery_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelCadmiumBatteryPack",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_cadmium_battery_pack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/item/NickelCadmiumBatteryPackItem.java",
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nickel_cadmium_battery_pack.json"
+        ]
+      }
+    },
+    {
+      "name": "NickelCadmiumBatteryPackRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nickel_cadmium_battery_pack_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nickel_cadmium_battery_pack_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -495,28 +557,35 @@
   "tab_element_order": {
     "CUSTOM:Accumulators": [
       "CreativeAccumulator",
-      "BatteryPack",
-      "AABattery",
+      "Accumulator",
+      "NickelCadmiumAccumulator",
       "LithiumOre",
       "LithiumBlock",
       "LithiumIngot",
       "IonicLithium",
+      "GraphitePowder",
       "Graphite",
       "Cadmium",
-      "Accumulator",
-      "NickelCadmiumAccumulator"
+      "NickelDust",
+      "NickelBlock",
+      "AABattery",
+      "BatteryPack",
+      "NickelCadmiumBattery",
+      "NickelCadmiumBatteryPack"
     ]
   },
   "language_map": {
     "en_us": {
       "item.create_new_age_accumulators.incomplete_battery": "Incomplete Battery",
       "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
+      "item.create_new_age_accumulators.nickel_cadmium_battery_pack": "Nickel Cadmium Battery Pack",
+      "item.create_new_age_accumulators.nickel_cadmium_battery": "Nickel Cadmium Battery",
       "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
       "item.create_new_age_accumulators.graphite_powder": "Graphite Powder",
-      "item.create_new_age_accumulators.battery_pack": "Battery Pack",
+      "item.create_new_age_accumulators.battery_pack": "Lithium Ion Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
       "block.create_new_age_accumulators.creative_accumulator": "Creative Accumulator",
-      "item.create_new_age_accumulators.battery": "Battery",
+      "item.create_new_age_accumulators.battery": "Lithium Ion Battery",
       "item_group.create_new_age_accumulators.accumulators": "Accumulators",
       "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
       "block.create_new_age_accumulators.nickel_block": "Block of Nickel",

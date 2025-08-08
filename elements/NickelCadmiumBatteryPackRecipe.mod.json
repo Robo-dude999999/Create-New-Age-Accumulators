@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "Items.DYE#10"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      },
+      {
+        "value": "Items.DRIED_KELP"
+      },
+      {
+        "value": "CUSTOM:NickelCadmiumBattery"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BatteryPack"
+    },
+    "name": "nickel_cadmium_battery_pack_recipe",
+    "namespace": "mod"
+  }
+}

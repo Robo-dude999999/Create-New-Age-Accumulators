@@ -7,7 +7,7 @@
     "customModelName": "batterypack:default",
     "customProperties": {},
     "states": [],
-    "name": "Battery Pack",
+    "name": "Lithium Ion Battery Pack",
     "rarity": "COMMON",
     "creativeTabs": [
       {

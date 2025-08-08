@@ -1,0 +1,7 @@
+{
+  "parent": "create_new_age_accumulators:custom/ncbatterypack",
+  "textures": {
+    "0": "create_new_age_accumulators:block/yellowbatterypacktexture",
+    "particle": "create_new_age_accumulators:item/yellowbatterypacktexture"
+  }
+}

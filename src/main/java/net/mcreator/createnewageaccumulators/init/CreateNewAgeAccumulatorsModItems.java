@@ -13,6 +13,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.createnewageaccumulators.item.NickelDustItem;
+import net.mcreator.createnewageaccumulators.item.NickelCadmiumBatteryPackItem;
+import net.mcreator.createnewageaccumulators.item.NickelCadmiumBatteryItem;
 import net.mcreator.createnewageaccumulators.item.LithiumIngotItem;
 import net.mcreator.createnewageaccumulators.item.IonicLithiumItem;
 import net.mcreator.createnewageaccumulators.item.ImcompleteAABatteryItem;
@@ -40,6 +42,8 @@ public class CreateNewAgeAccumulatorsModItems {
 	public static final RegistryObject<Item> NICKEL_BLOCK = block(CreateNewAgeAccumulatorsModBlocks.NICKEL_BLOCK);
 	public static final RegistryObject<Item> GRAPHITE_POWDER = REGISTRY.register("graphite_powder", () -> new GraphitePowderItem());
 	public static final RegistryObject<Item> NICKEL_CADMIUM_ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.NICKEL_CADMIUM_ACCUMULATOR);
+	public static final RegistryObject<Item> NICKEL_CADMIUM_BATTERY = REGISTRY.register("nickel_cadmium_battery", () -> new NickelCadmiumBatteryItem());
+	public static final RegistryObject<Item> NICKEL_CADMIUM_BATTERY_PACK = REGISTRY.register("nickel_cadmium_battery_pack", () -> new NickelCadmiumBatteryPackItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

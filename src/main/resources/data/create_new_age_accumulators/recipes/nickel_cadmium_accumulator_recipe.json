@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "cec"
+  ],
+  "key": {
+    "a": {
+      "item": "create:andesite_casing"
+    },
+    "b": {
+      "item": "create_new_age:electrical_connector"
+    },
+    "c": {
+      "item": "create_new_age_accumulators:nickel_cadmium_battery_pack"
+    },
+    "d": {
+      "item": "minecraft:comparator"
+    },
+    "e": {
+      "item": "create_new_age:copper_wire"
+    }
+  },
+  "result": {
+    "item": "create_new_age_accumulators:nickel_cadmium_accumulator",
+    "count": 2
+  }
+}

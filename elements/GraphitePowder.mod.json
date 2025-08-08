@@ -9,7 +9,11 @@
     "states": [],
     "name": "Graphite Powder",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Accumulators"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
