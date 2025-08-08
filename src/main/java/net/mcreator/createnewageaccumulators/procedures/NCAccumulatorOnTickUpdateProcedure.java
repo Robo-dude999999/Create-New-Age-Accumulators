@@ -12,11 +12,16 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class NCAccumulatorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double amount = 0;
-		{
-			BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-			int _amount = (int) 0.1;
-			if (_ent != null)
-				_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.extractEnergy(_amount, false));
+		double doit = 0;
+		doit = doit + 1;
+		if (doit >= 20) {
+			{
+				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+				int _amount = 1;
+				if (_ent != null)
+					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.extractEnergy(_amount, false));
+			}
+			doit = 0;
 		}
 		amount = new Object() {
 			public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
