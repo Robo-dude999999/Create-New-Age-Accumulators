@@ -15,6 +15,8 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.createnewageaccumulators.item.LithiumIngotItem;
 import net.mcreator.createnewageaccumulators.item.IonicLithiumItem;
 import net.mcreator.createnewageaccumulators.item.ImcompleteAABatteryItem;
+import net.mcreator.createnewageaccumulators.item.GraphiteItem;
+import net.mcreator.createnewageaccumulators.item.CadmiumItem;
 import net.mcreator.createnewageaccumulators.item.BatteryPackItem;
 import net.mcreator.createnewageaccumulators.item.AABatteryItem;
 import net.mcreator.createnewageaccumulators.CreateNewAgeAccumulatorsMod;
@@ -30,6 +32,8 @@ public class CreateNewAgeAccumulatorsModItems {
 	public static final RegistryObject<Item> IONIC_LITHIUM = REGISTRY.register("ionic_lithium", () -> new IonicLithiumItem());
 	public static final RegistryObject<Item> INCOMPLETE_BATTERY = REGISTRY.register("incomplete_battery", () -> new ImcompleteAABatteryItem());
 	public static final RegistryObject<Item> CREATIVE_ACCUMULATOR = block(CreateNewAgeAccumulatorsModBlocks.CREATIVE_ACCUMULATOR);
+	public static final RegistryObject<Item> GRAPHITE = REGISTRY.register("graphite", () -> new GraphiteItem());
+	public static final RegistryObject<Item> CADMIUM = REGISTRY.register("cadmium", () -> new CadmiumItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

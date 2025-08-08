@@ -287,6 +287,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "Graphite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graphite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/graphite.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/GraphiteItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GraphiteRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "graphite_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/graphite_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "Cadmium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cadmium",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/cadmium.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/CadmiumItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -310,21 +348,25 @@
       "LithiumOre",
       "LithiumBlock",
       "LithiumIngot",
-      "IonicLithium"
+      "IonicLithium",
+      "Graphite",
+      "Cadmium"
     ]
   },
   "language_map": {
     "en_us": {
       "item.create_new_age_accumulators.incomplete_battery": "Incomplete Battery",
       "block.create_new_age_accumulators.lithium_block": "Block of Lithium",
-      "item_group.create_new_age_accumulators.accumulators": "Accumulators",
-      "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
       "item.create_new_age_accumulators.ionic_lithium": "Ionic Lithium",
       "block.create_new_age_accumulators.accumulator": "Accumulator",
       "item.create_new_age_accumulators.battery_pack": "Battery Pack",
       "item.create_new_age_accumulators.lithium_ingot": "Lithium",
       "block.create_new_age_accumulators.creative_accumulator": "Creative Accumulator",
-      "item.create_new_age_accumulators.battery": "Battery"
+      "item.create_new_age_accumulators.battery": "Battery",
+      "item_group.create_new_age_accumulators.accumulators": "Accumulators",
+      "block.create_new_age_accumulators.lithium_ore": "Lithium Ore",
+      "item.create_new_age_accumulators.graphite": "Graphite",
+      "item.create_new_age_accumulators.cadmium": "Cadmium"
     }
   },
   "foldersRoot": {

@@ -26,6 +26,8 @@ public class CreateNewAgeAccumulatorsModTabs {
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_BLOCK.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.LITHIUM_INGOT.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.IONIC_LITHIUM.get());
+				tabData.accept(CreateNewAgeAccumulatorsModItems.GRAPHITE.get());
+				tabData.accept(CreateNewAgeAccumulatorsModItems.CADMIUM.get());
 			})
 
 					.build());
