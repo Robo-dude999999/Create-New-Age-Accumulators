@@ -11,24 +11,24 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class AccumulatorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		double amount = 0;
-		amount = new Object() {
-			public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.DOWN).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
-				return _retval.get();
-			}
-		}.receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z), new Object() {
-			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
-			}
-		}.getEnergyStored(world, BlockPos.containing(x, y, z)));
+        double amount = new Object() {
+            public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+                AtomicInteger _retval = new AtomicInteger(0);
+                BlockEntity _ent;
+                _ent = level.getBlockEntity(pos);
+                if (_ent != null)
+                    _ent.getCapability(ForgeCapabilities.ENERGY, Direction.DOWN).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+                return _retval.get();
+            }
+        }.receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z), new Object() {
+            public int getEnergyStored(LevelAccessor level, BlockPos pos) {
+                AtomicInteger _retval = new AtomicInteger(0);
+                BlockEntity _ent = level.getBlockEntity(pos);
+                if (_ent != null)
+                    _ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
+                return _retval.get();
+            }
+        }.getEnergyStored(world, BlockPos.containing(x, y, z)));
 		if (new Object() {
 			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
 				AtomicInteger _retval = new AtomicInteger(0);
