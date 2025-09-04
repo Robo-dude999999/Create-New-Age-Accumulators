@@ -12,6 +12,26 @@
         "state": {
           "Name": "create_new_age_accumulators:lithium_ore"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "minecraft:mineable/pickaxe"
+        },
+        "state": {
+          "Name": "create_new_age_accumulators:lithium_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:stone"
+          }
+        },
+        "state": {
+          "Name": "create_new_age_accumulators:lithium_ore"
+        }
       }
     ]
   }

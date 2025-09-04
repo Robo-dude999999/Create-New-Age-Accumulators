@@ -130,6 +130,12 @@
     "blocksToReplace": [
       {
         "value": "TAG:stone_ore_replaceables"
+      },
+      {
+        "value": "TAG:minecraft:mineable/pickaxe"
+      },
+      {
+        "value": "Blocks.STONE#0"
       }
     ],
     "generationShape": "UNIFORM",

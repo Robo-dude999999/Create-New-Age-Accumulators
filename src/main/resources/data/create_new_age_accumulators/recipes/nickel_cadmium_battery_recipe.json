@@ -3,7 +3,6 @@
   "ingredient": {
     "item": "create:copper_sheet"
   },
-  "loops": 6,
   "results": [
     {
       "item": "create_new_age_accumulators:nickel_cadmium_battery"
