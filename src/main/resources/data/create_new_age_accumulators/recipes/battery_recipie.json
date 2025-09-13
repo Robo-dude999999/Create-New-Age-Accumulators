@@ -3,6 +3,7 @@
   "ingredient": {
     "item": "create:copper_sheet"
   },
+  "loops": 1,
   "results": [
     {
       "item": "create_new_age_accumulators:battery"
