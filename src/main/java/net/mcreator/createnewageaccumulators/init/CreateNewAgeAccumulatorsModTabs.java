@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -21,6 +20,7 @@ public class CreateNewAgeAccumulatorsModTabs {
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.CREATIVE_ACCUMULATOR.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ION_ACCUMULATOR.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.NICKEL_CADMIUM_ACCUMULATOR.get().asItem());
+				tabData.accept(CreateNewAgeAccumulatorsModBlocks.NUCLEAR_WASTE_HEAT_ACCUMULATOR.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_ORE.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModBlocks.LITHIUM_BLOCK.get().asItem());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.LITHIUM_INGOT.get());
@@ -34,7 +34,7 @@ public class CreateNewAgeAccumulatorsModTabs {
 				tabData.accept(CreateNewAgeAccumulatorsModItems.BATTERY_PACK.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.NICKEL_CADMIUM_BATTERY.get());
 				tabData.accept(CreateNewAgeAccumulatorsModItems.NICKEL_CADMIUM_BATTERY_PACK.get());
-			})
-
-			.build());
+				tabData.accept(CreateNewAgeAccumulatorsModItems.NUCLEAR_WASTE_HEAT_ACCUMULATOR_CORE.get());
+				tabData.accept(CreateNewAgeAccumulatorsModItems.REACTOR_CASING_ROD.get());
+			}).build());
 }

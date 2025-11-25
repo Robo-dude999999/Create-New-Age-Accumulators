@@ -13,32 +13,8 @@ public class NCAccumulatorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double amount = 0;
 		double doit = 0;
-		amount = new Object() {
-			public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.DOWN).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
-				return _retval.get();
-			}
-		}.receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z), new Object() {
-			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
-			}
-		}.getEnergyStored(world, BlockPos.containing(x, y, z)));
-		if (new Object() {
-			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = level.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
-				return _retval.get();
-			}
-		}.getEnergyStored(world, BlockPos.containing(x, y, z)) >= amount) {
+		amount = receiveEnergySimulate(world, BlockPos.containing(x, y + 1, z), getEnergyStored(world, BlockPos.containing(x, y, z), null), Direction.DOWN);
+		if (getEnergyStored(world, BlockPos.containing(x, y, z), Direction.UP) >= amount) {
 			{
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y + 1, z));
 				int _amount = (int) amount;
@@ -52,5 +28,21 @@ public class NCAccumulatorOnTickUpdateProcedure {
 					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.extractEnergy(_amount, false));
 			}
 		}
+	}
+
+	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
+		AtomicInteger result = new AtomicInteger(0);
+		BlockEntity entity = level.getBlockEntity(pos);
+		if (entity != null)
+			entity.getCapability(ForgeCapabilities.ENERGY, direction).ifPresent(capability -> result.set(capability.getEnergyStored()));
+		return result.get();
+	}
+
+	private static int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int amount, Direction direction) {
+		AtomicInteger result = new AtomicInteger(0);
+		BlockEntity entity = level.getBlockEntity(pos);
+		if (entity != null)
+			entity.getCapability(ForgeCapabilities.ENERGY, direction).ifPresent(capability -> result.set(capability.receiveEnergy(amount, true)));
+		return result.get();
 	}
 }

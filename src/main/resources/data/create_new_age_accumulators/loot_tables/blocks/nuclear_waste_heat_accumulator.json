@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "create_new_age_accumulators:blocks/nuclear_waste_heat_accumulator",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "create_new_age_accumulators:nuclear_waste_heat_accumulator"
+        }
+      ]
+    }
+  ]
+}

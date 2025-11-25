@@ -16,5 +16,10 @@
   "block.create_new_age_accumulators.lithium_ion_accumulator": "Lithium Ion Accumulator",
   "item.create_new_age_accumulators.graphite": "Graphite",
   "block.create_new_age_accumulators.nickel_cadmium_accumulator": "Nickel Cadmium Accumulator",
-  "item.create_new_age_accumulators.cadmium": "Cadmium"
+  "item.create_new_age_accumulators.cadmium": "Cadmium",
+  "block.create_new_age_accumulators.creative_accumulator.description_0": "Very high tech, but no one has been able to replicate it yet.",
+  "block.create_new_age_accumulators.nuclear_waste_heat_accumulator": "Nuclear Waste Heat Accumulator",
+  "subtitles.metal_creak": "udunga",
+  "item.create_new_age_accumulators.nuclear_waste_heat_accumulator_core": "Nuclear Waste Heat Accumulator Core",
+  "item.create_new_age_accumulators.reactor_casing_rod": "Reactor Casing Rod"
 }

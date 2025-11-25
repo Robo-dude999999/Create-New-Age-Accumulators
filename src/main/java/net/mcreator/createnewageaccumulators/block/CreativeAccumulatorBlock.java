@@ -1,4 +1,3 @@
-
 package net.mcreator.createnewageaccumulators.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -27,13 +26,13 @@ import java.util.List;
 
 public class CreativeAccumulatorBlock extends Block implements EntityBlock {
 	public CreativeAccumulatorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Very high tech, but no one has been able to replicate it yet."));
+		list.add(Component.translatable("block.create_new_age_accumulators.creative_accumulator.description_0"));
 	}
 
 	@Override
@@ -72,7 +71,7 @@ public class CreativeAccumulatorBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

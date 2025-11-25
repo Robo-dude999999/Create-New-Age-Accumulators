@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "create_new_age_accumulators:lithium_block",
-    "create_new_age_accumulators:lithium_ore"
+    "create_new_age_accumulators:lithium_ore",
+    "create_new_age_accumulators:nickel_block",
+    "create_new_age_accumulators:lithium_block"
   ]
 }

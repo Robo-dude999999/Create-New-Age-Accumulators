@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "create_new_age:reactor_glass"
+    },
+    {
+      "item": "create_new_age_accumulators:nuclear_waste_heat_accumulator_core"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_new_age_accumulators:nuclear_waste_heat_accumulator"
+    }
+  ]
+}

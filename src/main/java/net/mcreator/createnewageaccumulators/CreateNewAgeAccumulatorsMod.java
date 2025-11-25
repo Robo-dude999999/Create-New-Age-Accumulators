@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.createnewageaccumulators.init.CreateNewAgeAccumulatorsModTabs;
+import net.mcreator.createnewageaccumulators.init.CreateNewAgeAccumulatorsModSounds;
 import net.mcreator.createnewageaccumulators.init.CreateNewAgeAccumulatorsModItems;
 import net.mcreator.createnewageaccumulators.init.CreateNewAgeAccumulatorsModBlocks;
 import net.mcreator.createnewageaccumulators.init.CreateNewAgeAccumulatorsModBlockEntities;
@@ -36,18 +37,16 @@ public class CreateNewAgeAccumulatorsMod {
 	public static final Logger LOGGER = LogManager.getLogger(CreateNewAgeAccumulatorsMod.class);
 	public static final String MODID = "create_new_age_accumulators";
 
-	public CreateNewAgeAccumulatorsMod() {
+	public CreateNewAgeAccumulatorsMod(FMLJavaModLoadingContext context) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
-		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		IEventBus bus = context.getModEventBus();
+		CreateNewAgeAccumulatorsModSounds.REGISTRY.register(bus);
 		CreateNewAgeAccumulatorsModBlocks.REGISTRY.register(bus);
 		CreateNewAgeAccumulatorsModBlockEntities.REGISTRY.register(bus);
 		CreateNewAgeAccumulatorsModItems.REGISTRY.register(bus);
-
 		CreateNewAgeAccumulatorsModTabs.REGISTRY.register(bus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
@@ -55,7 +54,7 @@ public class CreateNewAgeAccumulatorsMod {
 	// Start of user code block mod methods
 	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
-	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(ResourceLocation.fromNamespaceAndPath(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
 	private static int messageID = 0;
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {

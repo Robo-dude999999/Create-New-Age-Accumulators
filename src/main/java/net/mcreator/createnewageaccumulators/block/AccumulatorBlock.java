@@ -1,4 +1,3 @@
-
 package net.mcreator.createnewageaccumulators.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,7 +24,7 @@ import net.mcreator.createnewageaccumulators.block.entity.AccumulatorBlockEntity
 
 public class AccumulatorBlock extends Block implements EntityBlock {
 	public AccumulatorBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
@@ -74,7 +73,7 @@ public class AccumulatorBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 import java.util.stream.IntStream;
 
 public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public AccumulatorBlockEntity(BlockPos position, BlockState state) {
@@ -120,12 +120,12 @@ public class AccumulatorBlockEntity extends RandomizableContainerBlockEntity imp
 	}
 
 	@Override
-	public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, stack);
+	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
+		return this.canPlaceItem(index, itemstack);
 	}
 
 	@Override
-	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
 	}
 

@@ -536,20 +536,170 @@
           "src/main/resources/data/create_new_age_accumulators/recipes/nickel_cadmium_battery_pack_recipe.json"
         ]
       }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_waste_heat_accumulator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nuclear_waste_heat_accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/entity/NuclearWasteHeatAccumulatorBlockEntity.java",
+          "src/main/resources/data/create_new_age_accumulators/loot_tables/blocks/nuclear_waste_heat_accumulator.json",
+          "src/main/resources/assets/create_new_age_accumulators/models/block/nuclear_waste_heat_accumulator.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/block/NuclearWasteHeatAccumulatorBlock.java",
+          "src/main/resources/assets/create_new_age_accumulators/blockstates/nuclear_waste_heat_accumulator.json"
+        ]
+      }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulatorOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_waste_heat_accumulator_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/NuclearWasteHeatAccumulatorOnBlockRightclickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulatorOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_waste_heat_accumulator_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/createnewageaccumulators/procedures/NuclearWasteHeatAccumulatorOnRandomClientDisplayTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulatorCore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_waste_heat_accumulator_core",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/nuclear_waste_heat_accumulator_core.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/NuclearWasteHeatAccumulatorCoreItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulatorRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nuclear_waste_heat_accumulator_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nuclear_waste_heat_accumulator_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "ReactorCasingRod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reactor_casing_rod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/create_new_age_accumulators/models/item/reactor_casing_rod.json",
+          "src/main/java/net/mcreator/createnewageaccumulators/item/ReactorCasingRodItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NuclearWasteHeatAccumulatorCoreRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nuclear_waste_heat_accumulator_core_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/nuclear_waste_heat_accumulator_core_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "ReactorCasingRodRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "reactor_casing_rod_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/reactor_casing_rod_recipie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "metal_creak",
+      "files": [
+        "audiomass-output"
+      ],
+      "category": "neutral",
+      "subtitle": "udunga"
+    }
+  ],
   "tag_elements": {
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~CUSTOM:NickelBlock"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:NickelBlock",
       "~CUSTOM:LithiumBlock",
       "~CUSTOM:LithiumOre"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:NickelBlock",
       "~CUSTOM:LithiumBlock",
       "~CUSTOM:LithiumOre"
     ]
@@ -559,6 +709,7 @@
       "CreativeAccumulator",
       "Accumulator",
       "NickelCadmiumAccumulator",
+      "NuclearWasteHeatAccumulator",
       "LithiumOre",
       "LithiumBlock",
       "LithiumIngot",
@@ -571,7 +722,9 @@
       "AABattery",
       "BatteryPack",
       "NickelCadmiumBattery",
-      "NickelCadmiumBatteryPack"
+      "NickelCadmiumBatteryPack",
+      "NuclearWasteHeatAccumulatorCore",
+      "ReactorCasingRod"
     ]
   },
   "language_map": {
@@ -593,8 +746,26 @@
       "block.create_new_age_accumulators.lithium_ion_accumulator": "Lithium Ion Accumulator",
       "item.create_new_age_accumulators.graphite": "Graphite",
       "block.create_new_age_accumulators.nickel_cadmium_accumulator": "Nickel Cadmium Accumulator",
-      "item.create_new_age_accumulators.cadmium": "Cadmium"
+      "item.create_new_age_accumulators.cadmium": "Cadmium",
+      "block.create_new_age_accumulators.creative_accumulator.description_0": "Very high tech, but no one has been able to replicate it yet.",
+      "block.create_new_age_accumulators.nuclear_waste_heat_accumulator": "Nuclear Waste Heat Accumulator",
+      "subtitles.metal_creak": "udunga",
+      "item.create_new_age_accumulators.nuclear_waste_heat_accumulator_core": "Nuclear Waste Heat Accumulator Core",
+      "item.create_new_age_accumulators.reactor_casing_rod": "Reactor Casing Rod"
     }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/createnewageaccumulators/init/CreateNewAgeAccumulatorsModBlocks.java",
+      "src/main/java/net/mcreator/createnewageaccumulators/init/CreateNewAgeAccumulatorsModBlockEntities.java",
+      "src/main/java/net/mcreator/createnewageaccumulators/init/CreateNewAgeAccumulatorsModItems.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/assets/create_new_age_accumulators/sounds.json",
+      "src/main/java/net/mcreator/createnewageaccumulators/init/CreateNewAgeAccumulatorsModSounds.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/createnewageaccumulators/CreateNewAgeAccumulatorsMod.java",
+      "src/main/java/net/mcreator/createnewageaccumulators/init/CreateNewAgeAccumulatorsModTabs.java"
+    ]
   },
   "foldersRoot": {
     "name": "~",
@@ -603,11 +774,13 @@
   "workspaceSettings": {
     "modid": "create_new_age_accumulators",
     "modName": "Create: New Age: Accumulators",
-    "version": "1.5.5b",
+    "version": "1.6.1b",
+    "description": "Adds an energy storage system to Create: New Age.",
     "author": "Robo-dude999999, MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/create-new-age-accumulators",
+    "license": "MIT License",
     "serverSideOnly": false,
+    "modPicture": "new_create_logo_background-overlay",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
@@ -616,5 +789,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.createnewageaccumulators"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202500344519
 }

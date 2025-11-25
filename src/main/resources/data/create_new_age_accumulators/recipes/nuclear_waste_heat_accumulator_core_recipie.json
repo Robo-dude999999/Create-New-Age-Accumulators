@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "create_new_age:heat_pipe"
+    },
+    "b": {
+      "item": "create_new_age_accumulators:reactor_casing_rod"
+    },
+    "c": {
+      "item": "create_new_age:solid_corium"
+    }
+  },
+  "result": {
+    "item": "create_new_age_accumulators:nuclear_waste_heat_accumulator_core",
+    "count": 1
+  }
+}

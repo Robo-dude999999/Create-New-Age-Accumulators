@@ -1,0 +1,9 @@
+{
+  "parent": "create_new_age_accumulators:custom/nuclearwasteheataccumulator",
+  "textures": {
+    "all": "create_new_age_accumulators:block/nuclearwasteheataccumulatortexture",
+    "particle": "create_new_age_accumulators:block/nuclearwasteheataccumulatortexture",
+    "0": "create_new_age_accumulators:block/nuclearwasteheataccumulatortexture"
+  },
+  "render_type": "translucent"
+}

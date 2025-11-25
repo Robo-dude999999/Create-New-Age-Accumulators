@@ -1,0 +1,11 @@
+{
+  "metal_creak": {
+    "subtitle": "subtitles.metal_creak",
+    "sounds": [
+      {
+        "name": "create_new_age_accumulators:audiomass-output",
+        "stream": false
+      }
+    ]
+  }
+}
