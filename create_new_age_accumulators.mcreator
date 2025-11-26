@@ -555,40 +555,6 @@
       }
     },
     {
-      "name": "NuclearWasteHeatAccumulatorOnBlockRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_waste_heat_accumulator_on_block_rightclicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/createnewageaccumulators/procedures/NuclearWasteHeatAccumulatorOnBlockRightclickedProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "NuclearWasteHeatAccumulatorOnRandomClientDisplayTick",
       "type": "procedure",
       "compiles": true,
