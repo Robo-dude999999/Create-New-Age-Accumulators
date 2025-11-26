@@ -645,6 +645,18 @@
           "src/main/resources/data/create_new_age_accumulators/recipes/reactor_casing_rod_recipie.json"
         ]
       }
+    },
+    {
+      "name": "CoriumSolidifyingRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "corium_solidifying_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/create_new_age_accumulators/recipes/corium_solidifying_recipie.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -654,7 +666,7 @@
       "files": [
         "audiomass-output"
       ],
-      "category": "neutral",
+      "category": "block",
       "subtitle": "udunga"
     }
   ],
